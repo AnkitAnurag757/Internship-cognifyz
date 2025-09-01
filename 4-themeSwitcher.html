@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Theme Switcher Website</title>
+  <link rel="stylesheet" href="themeSwitcher.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Theme Switcher</h1>
+    <p>Click the button below to switch between Light and Dark mode.</p>
+    <button class="theme-btn" onclick="toggleTheme()">🌙 Switch Theme</button>
+  </header>
+
+  <!-- Cards Section -->
+  <section class="card-container">
+    <div class="card">
+      <h3>About This Project</h3>
+      <p>
+        This card explains the project functionality. 
+        It uses HTML, CSS, and JavaScript to create a theme switcher.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Why Dark Mode?</h3>
+      <p>
+        Dark mode helps reduce eye strain, saves battery on OLED displays,
+        and offers a modern look for websites.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Real-World Use</h3>
+      <p>
+        Many websites like Twitter, GitHub, and YouTube have theme toggles.
+        It improves accessibility and user experience.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ankit Anurag | Theme Switcher Demo | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+      const btn = document.querySelector(".theme-btn");
+      if (document.body.classList.contains("dark")) {
+        btn.textContent = "☀️ Switch Theme";
+      } else {
+        btn.textContent = "🌙 Switch Theme";
+      }
+    }
+  </script>
+
+</body>
+</html>

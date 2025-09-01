@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center the row */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Input focus effect */
+.form-control:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  border-color: #0d6efd;
+}
+
+/* Modern button hover */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+/* Shadow for the card */
+.shadow-lg {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Floating label proper spacing */
+.form-floating > label {
+  color: #495057;
+}

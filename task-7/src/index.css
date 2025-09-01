@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+.feed-container {
+  padding-top: 20px;
+}
+
+.post-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.post-img {
+  border-radius: 8px;
+}
+
+button.btn-light {
+  border: none !important;
+  font-weight: 500;
+  color: #555;
+}
+
+button.btn-light:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+}
